@@ -40,7 +40,7 @@ Step2
 Now, select the 2 tables with a join so that you can see each person's name next to their hobby.
 */
 
-SELECT persons.name, hobbies.name AS hobbies FROM persons
+SELECT persons.name, hobbies.name FROM persons
 JOIN hobbies
 ON persons.id=hobbies.person_id;
 
