@@ -2,6 +2,7 @@
 
 Learn how to use SQL to store, query, and manipulate data
 The course outline include:
+#
 1.SQL Basics
 
 2.More Advanced SQL Queries
