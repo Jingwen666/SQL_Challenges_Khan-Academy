@@ -40,4 +40,5 @@ Sort the rows according to the total money spent, from the most spent to the lea
 SELECT customers.name, customers.email, SUM(orders.price) FROM customers
 LEFT OUTER JOIN orders
 ON customers.id = orders.customer_id
-GROUP BY customers.id,orders.price DESC;
+GROUP BY customers.id
+ORDER BY orders.price DESC;
