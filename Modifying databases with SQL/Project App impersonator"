@@ -1,0 +1,30 @@
+
+/*
+Think about your favorite apps, and pick one that stores your data- like a game that stores scores, an app that lets you post updates, etc. Now in this project, you're going to imagine that the app stores your data in a SQL database (which is pretty likely!), and write SQL statements that might look like their own SQL.
+
+CREATE a table to store the data.
+INSERT a few example rows in the table.
+Use an UPDATE to emulate what happens when you edit data in the app.
+Use a DELETE to emulate what happens when you delete data in the app.
+*/
+/* What does the app's SQL look like? */
+
+
+CREATE TABLE workout(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, time_spent_hours INTEGER,calories_burned INTEGER);
+
+INSERT INTO workout(name,time_spent_hours,calories_burned) VALUES('running',2,1000);
+INSERT INTO workout(name,time_spent_hours,calories_burned) VALUES('recreational paddle boarding',2,700);
+INSERT INTO workout(name,time_spent_hours,calories_burned) VALUES('skiing',3,950);
+INSERT INTO workout(name,time_spent_hours,calories_burned) VALUES('badminton',1,500);
+INSERT INTO workout(name,time_spent_hours,calories_burned) VALUES('yoga',1,180);
+
+
+SELECT * FROM workout;
+
+UPDATE workout SET name = 'intense_yoga' WHERE id=5;
+
+SELECT * FROM workout;
+
+DELETE FROM workout WHERE id=5;
+
+SELECT * FROM workout;
